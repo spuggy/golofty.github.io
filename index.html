@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centered ASCII Art</title>
+  <style>
+    :root {
+      --bg: #0f172a; /* slate-900 */
+      --fg: #e5e7eb; /* gray-200 */
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+    }
+    .wrap {
+      padding: 2rem;
+    }
+    pre {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: clamp(10px, 2.2vw, 18px);
+      line-height: 1.1;
+      white-space: pre; /* preserve spaces */
+      text-align: center; /* centers the lines inside the pre */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" aria-label="ASCII art" role="img">
+    <pre>
+  _           __ _           ____  _       _ _        _ 
+ | |    ___  / _| |_ _   _  |  _ \(_) __ _(_) |_ __ _| |
+ | |   / _ \| |_| __| | | | | | | | |/ _` | | __/ _` | |
+ | |__| (_) |  _| |_| |_| | | |_| | | (_| | | || (_| | |
+ |_____\___/|_|  \__|\__, | |____/|_|\__, |_|\__\__,_|_|
+                     |___/           |___/              
+    </pre>
+  </div>
+</body>
+</html>
